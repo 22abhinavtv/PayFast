@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayFast</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+<!---------------------------------------------------------MAIN SECTION START------------------------------------------------->
+<!---------------------------------------------HEADER SECTION STAT-------------------------------------------------------->
+<header class="header">
+  <nav class="navbar navbar-default navbar-expand-sm navb navbar-light ">
+    <a class="navbar-brand" href="#">
+      <img src="./images/fastpay - logo.svg" alt="home logo..." class="logo pt-2 pb-2">
+    </a>
+    <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNav">
+      <div class="ul-div ml-auto">
+        <ul class="navbar-nav ml-auto" id="navigation">
+          <li class="nav-item ">
+            <a class="nav-link" id="home" href="">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="about" href="">About</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" id="featurs" href="">Featurs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pricing" href="">Pricing</a>
+          </li>
+        </ul>
+      </div>
+      <div class="buttons ml-auto">
+        <button class="login">Login</button>
+        <button class="signup">Signup</button>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+<!----------------------------------------------HEADER SECTION END-------------------------------------------------------->
+<section class="main-section">
+  <div class="main-sect">
+    <div class="col-md-6 content-sect">
+
+    </div>
+    <div class="col-md-6 image-sect">
+
+    </div>
+  </div>
+</section>
+</main>
+<!-- <button class="start-btn">  Get started </button> -->
+<!---------------------------------------------------------MAIN SECTION END--------------------------------------------------->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script >    
+    $('.navbar-nav>li>a').on('click', function(){
+     $('.navbar-collapse').collapse('hide');
+ });
+ </script>
+</body>
+</html>

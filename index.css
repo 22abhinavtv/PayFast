@@ -1,0 +1,147 @@
+@font-face{
+    src: url(./Fonts/gordita-cufonfonts.zip);
+    font-family: gordita black;
+}
+*{
+    margin: 0%;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*--------------------------------------HEADER SECTION START--------------------------------------*/
+header{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    z-index: 60;
+    text-align: center;
+}
+.logo{
+    margin-right: 0;
+    width: 10rem;
+}
+#navbarnav{
+    margin-left: 2rem;
+}
+.ul-div{
+    padding-right: 3rem;
+}
+.nav-link{
+    color: #888398;
+    font-size: 1.5rem;
+    padding-left: 3rem;
+    font-weight: 400;
+    margin-left: 4rem;
+    text-align: center;
+    position: relative;
+}
+.nav-link:after{
+    content: "";
+    position: absolute;
+    letter-spacing: 2px;
+    background-color: brown;
+    height: 4px;
+    width: 0;
+    left: 0;
+    bottom: -2px;
+    margin-left: 20px;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+.nav-link:hover::after{
+    width: 60%;
+}
+.button{
+    text-align: center;
+    background-size: 200%;
+}
+a:hover{
+    font-weight: 600;
+}
+.button:focus{
+    outline: none;
+}
+.login,.signup{
+   border: none;
+   width: 7rem;
+   height: 3rem;
+   border-radius: 10px;
+}
+.signup{
+    background-image: linear-gradient(125deg,#E45F83,#E45F83,#f79f7d,#E45F83,#888398 );
+    font-weight: 550;
+    color: #fff;
+}
+.login{
+    background: #fff;
+    color: #888398;
+}
+/*-------------------------------------HEADER SECTION END----------------------------------------*/
+/*------------------------------------MAIN SECTION START----------------------------------------*/
+.ain-section{
+    display: flex;
+    flex: 1;
+    min-height: 0px;
+}
+.content-sect,.image-sect{
+    width: 50%;
+    height: 88vh;
+    background-color: red;
+    float: left;
+}
+.image-sect{
+    background-color: rosybrown;
+    
+}
+/* .start-btn{
+    margin: 1rem 0 0 0 ;
+    text-align: center;
+    padding: 0.9rem 2.7rem 0.9rem 2.7rem;
+    background-image: linear-gradient(125deg,#E45F83,#E45F83,#f79f7d,#E45F83,#888398 );
+    font-weight: 550;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 1.3rem;
+.btn-ctnt{ */
+}
+/*--------------------------------------MAIN SECTION END-------------------------------------------------*/
+/*----------------------------------------------------MEDIA QUERYS START--------------------------------*/
+@media only screen and (max-width: 1024px){
+    .nav-link{
+        margin-left: 3rem;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .logo{
+        width: 7rem;
+    }
+    .nav-link{
+        margin-left: 0%;
+        font-size: 1.2rem;
+    }
+    .login,.signup{
+        width: 4.5rem;
+        height: 3rem;
+    }
+    .content-sect{
+        height: 44vh
+    }
+    .main-section{
+        height: 44vh;
+    }
+    .home-img{
+        height: 44vh;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .logo{
+        width: 6rem;
+        overf
+    }
+    
+}
+
+/*---------------------------MEADIA QUERYS END------------------------------*/
